@@ -1,7 +1,17 @@
+#######################################################################
+#   DB operations API - members table
+#   
+#   Created: 2023. 11. 16
+#   Last Modified: 2023. 11. 20
+#
+#   Authors:
+#      Nagyeong Choi (choi2019@pukyong.ac.kr)
+#######################################################################
+
 import pymysql
 import pandas as pd
 
-class DB_API:
+class DB_members_API:
     def __init__(self) :
         # 데이터베이스 연결 설정
         self.conn = pymysql.connect(host="127.0.0.1", port=3306, user="root", passwd="1111", db="testdb", autocommit=True, charset='utf8')
